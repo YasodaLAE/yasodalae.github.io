@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasoda Lasiru Ariyarathna Epa | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        natural: {
+                            50: '#fcfcfc',  /* Clean White */
+                            100: '#f7f7f5', /* Soft Stone */
+                            200: '#e8e8e3',
+                            300: '#dcdcd5',
+                            800: '#44403c', /* Dark Stone Text */
+                            900: '#292524',
+                        },
+                        sage: {
+                            100: '#eaf4e7', /* Very light green */
+                            200: '#dcecd6',
+                            500: '#8ebf7e', /* Soft primary green */
+                            600: '#73a562',
+                            700: '#5a854d',
+                        },
+                        sun: {
+                            100: '#fefce8',
+                            200: '#fff9c4', /* Soft Yellow */
+                            400: '#fde047',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom delicate animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nature-gradient {
+            background: linear-gradient(135deg, #fcfcfc 0%, #f7f7f5 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(90, 133, 77, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-natural-50 text-natural-800 font-sans antialiased selection:bg-sage-200 selection:text-sage-700">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-natural-50/90 backdrop-blur-md border-b border-natural-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-serif text-xl font-semibold text-sage-700 tracking-wide">Y.L.A. Epa</a>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-natural-800">
+                <a href="#about" class="hover:text-sage-600 transition-colors">About</a>
+                <a href="#experience" class="hover:text-sage-600 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-sage-600 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-sage-600 transition-colors">Skills</a>
+            </div>
+
+            <a href="#contact" class="px-5 py-2 bg-sage-600 text-white rounded-full text-sm font-medium hover:bg-sage-700 transition-colors shadow-sm hover:shadow-md">
+                Contact Me
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <!-- Decorative organic shapes -->
+        <div class="absolute top-20 right-0 w-96 h-96 bg-sage-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+        <div class="absolute bottom-20 left-0 w-72 h-72 bg-sun-100 rounded-full blur-3xl opacity-60 -z-10"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="fade-in-up">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-sage-100 text-sage-700 text-sm font-medium mb-6 tracking-wide border border-sage-200">
+                    Portfolio & CV
+                </span>
+                <h1 class="font-serif text-5xl md:text-7xl font-semibold text-natural-900 mb-6 leading-tight">
+                    Yasoda Lasiru <br> Ariyarathna Epa
+                </h1>
+                <p class="text-lg md:text-xl text-natural-800 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Undergraduate at University of Moratuwa with a passion for 
+                    <span class="bg-sun-200/50 px-1 rounded">Engineering AI</span> and
+                    <span class="bg-sage-200/50 px-1 rounded">Software</span>.
+                </p>
+                
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-sage-600 text-white rounded-full font-medium hover:bg-sage-700 transition-colors shadow-lg shadow-sage-200">
+                        View My Work
+                    </a>
+                    <a href="mailto:yasodalasiru@gmail.com" class="px-8 py-3 bg-white border border-natural-300 text-natural-800 rounded-full font-medium hover:bg-natural-50 hover:border-sage-400 transition-colors">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <div class="mt-12 flex justify-center space-x-6 text-natural-800">
+                    <a href="https://linkedin.com/in/yasoda-lasiru" target="_blank" class="hover:text-sage-600 hover:scale-110 transition-all p-2 bg-white rounded-full shadow-sm border border-natural-200">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://github.com/YasodaLAE" target="_blank" class="hover:text-sage-600 hover:scale-110 transition-all p-2 bg-white rounded-full shadow-sm border border-natural-200">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                    <a href="mailto:yasodalasiru@gmail.com" class="hover:text-sage-600 hover:scale-110 transition-all p-2 bg-white rounded-full shadow-sm border border-natural-200">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Education & About -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-sage-100 rounded-2xl transform rotate-3"></div>
+                    <div class="relative bg-natural-50 p-8 rounded-2xl border border-natural-200 shadow-sm">
+                        <h3 class="font-serif text-2xl text-sage-700 mb-4">Education</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg">University of Moratuwa</h4>
+                            <p class="text-sm text-gray-500">B.Sc. Engineering (Hons) | 2022 - Present</p>
+                            <p class="mt-2 text-sm text-natural-800">Dept. of Electronic & Telecommunication Engineering</p>
+                            <div class="mt-3 flex flex-wrap gap-2">
+                                <span class="text-xs bg-sun-100 text-yellow-700 px-2 py-1 rounded border border-sun-200">CGPA: 3.91/4.00</span>
+                                <span class="text-xs bg-sage-50 text-sage-700 px-2 py-1 rounded border border-sage-200">Dean's List (5 Semesters)</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-lg">Sanghamiththa Girls' College</h4>
+                            <p class="text-sm text-gray-500">G.C.E. Advanced Level (2020)</p>
+                            <p class="mt-2 text-sm text-natural-800">Physical Science Stream</p>
+                            <div class="mt-3">
+                                <span class="text-xs bg-natural-100 text-natural-700 px-2 py-1 rounded">Island Rank: 30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="text-sage-600 font-medium text-sm tracking-wider uppercase mb-2 block">About Me</span>
+                    <h2 class="font-serif text-3xl md:text-4xl text-natural-900 mb-6">Combining Electronics with Artificial Intelligence</h2>
+                    <p class="text-natural-800 mb-6 leading-relaxed">
+                        I am an engineering undergraduate specializing in Electronics and Telecommunication.
+                    </p>
+                    <p class="text-natural-800 mb-8 leading-relaxed">
+                        Currently, I am exploring the intersection of AI and Quantum Computing, specifically in robust Vision Language Models and Hybrid Algorithms.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-natural-50 rounded-xl border border-natural-100">
+                            <i data-lucide="award" class="w-6 h-6 text-sage-600 mb-2"></i>
+                            <h5 class="font-semibold text-sm">Mahapola Scholarship</h5>
+                            <p class="text-xs text-gray-500">Merit Award</p>
+                        </div>
+                        <div class="p-4 bg-natural-50 rounded-xl border border-natural-100">
+                            <i data-lucide="code-2" class="w-6 h-6 text-sage-600 mb-2"></i>
+                            <h5 class="font-semibold text-sm">IEEE Xtreme 17.0</h5>
+                            <p class="text-xs text-gray-500">Ranked 91st in Sri Lanka</p>
+                        </div>
+                         <div class="p-4 bg-natural-50 rounded-xl border border-natural-100 col-span-2">
+                            <i data-lucide="star" class="w-6 h-6 text-sage-600 mb-2"></i>
+                            <h5 class="font-semibold text-sm">Sujatha Guruge Scholarship</h5>
+                            <p class="text-xs text-gray-500">Best Performance (Year 1)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-20 bg-natural-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-serif text-3xl text-center text-natural-900 mb-16">Professional Experience</h2>
+            
+            <div class="relative border-l-2 border-sage-200 pl-8 ml-4 md:ml-0 space-y-12">
+                <!-- Item 1 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-sage-500 ring-4 ring-white">
+                        <i data-lucide="briefcase" class="w-3 h-3 text-white"></i>
+                    </span>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-natural-100 card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-natural-900">Intern AI Engineering</h3>
+                                <p class="text-sage-600 font-medium">Singapore University of Technology and Design</p>
+                            </div>
+                            <span class="text-sm text-gray-500 bg-natural-50 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Dec 2024 - Jun 2025</span>
+                        </div>
+                        <p class="text-natural-800 mb-4">
+                            Working on improving the robustness of Vision Language Models against data poisoning attacks.
+                        </p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-sm text-gray-600">
+                            <li>Implemented multiple defense techniques across different model architectures.</li>
+                            <li>Proposed a new defense approach validated through extensive experiments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-sage-600 font-medium text-sm tracking-wider uppercase">My Portfolio</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-natural-900 mt-2">Featured Projects</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="group bg-natural-50 rounded-2xl overflow-hidden border border-natural-100 hover:border-sage-200 transition-all card-hover flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-3 bg-white rounded-lg shadow-sm">
+                                <i data-lucide="cpu" class="w-6 h-6 text-sage-600"></i>
+                            </div>
+                            <span class="text-xs font-semibold bg-sun-100 text-yellow-800 px-2 py-1 rounded">Final Year Project</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-natural-900 mb-2">Quantum-Classical Image Classification</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                            Designed a hybrid pipeline combining classical feature extraction with quantum circuits. Evaluated performance on standard datasets against baselines.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">Python</span>
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">Pennylane</span>
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-natural-50 rounded-2xl overflow-hidden border border-natural-100 hover:border-sage-200 transition-all card-hover flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-3 bg-white rounded-lg shadow-sm">
+                                <i data-lucide="zap" class="w-6 h-6 text-sage-600"></i>
+                            </div>
+                            <a href="#" class="text-gray-400 hover:text-sage-600"><i data-lucide="github" class="w-5 h-5"></i></a>
+                        </div>
+                        <h3 class="text-lg font-bold text-natural-900 mb-2">Transformer Management System</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                            Web app for electrical transformer inspections using AI-driven thermal anomaly detection. Features interactive annotation and feedback loops.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">Web App</span>
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group bg-natural-50 rounded-2xl overflow-hidden border border-natural-100 hover:border-sage-200 transition-all card-hover flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-3 bg-white rounded-lg shadow-sm">
+                                <i data-lucide="activity" class="w-6 h-6 text-sage-600"></i>
+                            </div>
+                            <a href="#" class="text-gray-400 hover:text-sage-600"><i data-lucide="github" class="w-5 h-5"></i></a>
+                        </div>
+                        <h3 class="text-lg font-bold text-natural-900 mb-2">MedCare Web Application</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                            Full-stack application for managing doctor appointments and patient records with database integration and user management.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">React</span>
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="group bg-natural-50 rounded-2xl overflow-hidden border border-natural-100 hover:border-sage-200 transition-all card-hover flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-3 bg-white rounded-lg shadow-sm">
+                                <i data-lucide="pill" class="w-6 h-6 text-sage-600"></i>
+                            </div>
+                            <a href="#" class="text-gray-400 hover:text-sage-600"><i data-lucide="github" class="w-5 h-5"></i></a>
+                        </div>
+                        <h3 class="text-lg font-bold text-natural-900 mb-2">MediBox IoT Device</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                            Smart medication management device. Features scheduling, alerting, and environmental monitoring with a NodeRED dashboard.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">IoT</span>
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">NodeRED</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="group bg-natural-50 rounded-2xl overflow-hidden border border-natural-100 hover:border-sage-200 transition-all card-hover flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-3 bg-white rounded-lg shadow-sm">
+                                <i data-lucide="settings" class="w-6 h-6 text-sage-600"></i>
+                            </div>
+                            <a href="#" class="text-gray-400 hover:text-sage-600"><i data-lucide="github" class="w-5 h-5"></i></a>
+                        </div>
+                        <h3 class="text-lg font-bold text-natural-900 mb-2">Multi-Turn Magnetic Encoder</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                             Encoder for stepper motors utilizing magnetic field effects for absolute positioning. Designed circuit, enclosure, and firmware.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">PCB Design</span>
+                            <span class="text-xs bg-white border border-gray-200 px-2 py-1 rounded text-gray-600">Firmware</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 bg-natural-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-serif text-3xl text-center text-natural-900 mb-12">Technical Skills</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Languages -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-natural-200">
+                    <h3 class="font-semibold text-lg mb-6 flex items-center text-sage-700">
+                        <i data-lucide="code" class="w-5 h-5 mr-2"></i> Languages
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">Python</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">C / C++</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">Java</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">MATLAB</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">JavaScript</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">SQL</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">LaTeX</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-natural-200">
+                    <h3 class="font-semibold text-lg mb-6 flex items-center text-sage-700">
+                        <i data-lucide="layers" class="w-5 h-5 mr-2"></i> Frameworks & Tools
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">React</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">Spring Boot</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">PyTorch</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">Git</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">MySQL</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">Altium</span>
+                        <span class="px-4 py-2 bg-natural-50 text-natural-800 rounded-lg border border-natural-100 text-sm font-medium">Solidworks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteering -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-serif text-3xl text-center text-natural-900 mb-12">Volunteering</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 border border-natural-200 rounded-xl hover:bg-natural-50 transition-colors">
+                    <h4 class="font-bold text-natural-800">Secretary</h4>
+                    <p class="text-sage-600 text-sm">IEEE ComSoc Student Branch Chapter</p>
+                    <p class="text-xs text-gray-400 mt-1">Oct 2024 - Present</p>
+                </div>
+                <div class="p-6 border border-natural-200 rounded-xl hover:bg-natural-50 transition-colors">
+                    <h4 class="font-bold text-natural-800">External Relationship Manager</h4>
+                    <p class="text-sage-600 text-sm">Electronic Club, UoM</p>
+                    <p class="text-xs text-gray-400 mt-1">Oct 2024 - Present</p>
+                </div>
+                <div class="p-6 border border-natural-200 rounded-xl hover:bg-natural-50 transition-colors">
+                    <h4 class="font-bold text-natural-800">Assistant Secretary</h4>
+                    <p class="text-sage-600 text-sm">IEEE ComSoc Student Branch Chapter</p>
+                    <p class="text-xs text-gray-400 mt-1">Oct 2023 - Aug 2024</p>
+                </div>
+                <div class="p-6 border border-natural-200 rounded-xl hover:bg-natural-50 transition-colors">
+                    <h4 class="font-bold text-natural-800">External Relationship Coordinator</h4>
+                    <p class="text-sage-600 text-sm">Electronic Club, UoM</p>
+                    <p class="text-xs text-gray-400 mt-1">Oct 2023 - Aug 2024</p>
+                </div>
+                <div class="p-6 border border-natural-200 rounded-xl hover:bg-natural-50 transition-colors">
+                    <h4 class="font-bold text-natural-800">Blog Team Member</h4>
+                    <p class="text-sage-600 text-sm">Rotaract Club</p>
+                    <p class="text-xs text-gray-400 mt-1">Jun 2022 - July 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-natural-900 text-white">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="font-serif text-3xl mb-8">Let's Connect</h2>
+            <p class="text-natural-300 mb-10">
+                I'm always open to discussing new projects, creative ideas, or opportunities in AI and Robotics.
+            </p>
+            
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="mailto:yasodalasiru@gmail.com" class="flex items-center gap-2 text-natural-300 hover:text-white transition-colors">
+                    <i data-lucide="mail" class="w-5 h-5"></i> yasodalasiru@gmail.com
+                </a>
+                <a href="tel:+94702450125" class="flex items-center gap-2 text-natural-300 hover:text-white transition-colors">
+                    <i data-lucide="phone" class="w-5 h-5"></i> (+94) 702450125
+                </a>
+            </div>
+
+            <div class="flex justify-center gap-4">
+                <a href="https://linkedin.com/in/yasoda-lasiru" class="p-3 bg-natural-800 rounded-full hover:bg-sage-600 transition-colors">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="https://github.com/YasodaLAE" class="p-3 bg-natural-800 rounded-full hover:bg-sage-600 transition-colors">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+            </div>
+
+            <p class="mt-16 text-sm text-natural-500">© 2025 Yasoda Lasiru Ariyarathna Epa. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Smooth Scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
